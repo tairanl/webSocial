@@ -1,0 +1,37 @@
+:root {
+  --nav-background-color: #fff;
+}
+
+nav {
+  display: block;
+  /* 固定在视窗，拖动滚动条时位置保持不变 */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  padding: 0.7rem 0;
+  background: var(--nav-background-color);
+}
+
+/* nav里的container */
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container .logo {
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.2rem;
+  user-select: none;
+  /* order: 10; */
+}
+
+nav .container .create {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* order: -1; */
+}

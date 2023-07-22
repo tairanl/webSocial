@@ -1,0 +1,40 @@
+:root {
+  --left-profile-background-color: #fff;
+  --left-profile-padding: 1rem;
+  --left-profile-radius: 1rem;
+}
+
+.main-left {
+  position: relative;
+  /* main .css里面有个top:5.4rem，不减去的话拖动窗口会有变化*/
+  height: calc(100vh - 5.4rem);
+  min-width: 200px;
+  overflow-x: hidden;
+}
+
+.main-left h2 {
+  font-size: 0.9rem;
+}
+
+.main-left .profile {
+  display: flex;
+  align-items: center;
+  padding: var(--left-profile-padding);
+  border-radius: var(--left-profile-radius);
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  /* 不能直接在profile里面加颜色，否则会影响到其他调用profile class的元素 */
+  background-color: var(--color-white);
+}
+
+.main-left .profile p {
+  font-size: 0.7rem;
+}
+
+.main-left .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}

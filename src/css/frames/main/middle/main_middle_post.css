@@ -1,0 +1,33 @@
+:root {
+  --main-middle-post-background-color: #fff;
+  --main-middle-post-padding: 1rem;
+  --main-middle-post-radius: 1rem;
+  --main-middle-margin: 1rem;
+  --main-middle-btn-padding: 0.4rem 1.5rem;
+}
+
+.main-middle .create-post {
+  width: 100%;
+  /* 内部所有元素flex */
+  display: flex;
+  /* 上下居中 */
+  align-items: center;
+  /* 左右居中 */
+  justify-content: center;
+  margin-top: var(--main-middle-margin);
+  background: var(--main-middle-post-background-color);
+  padding: 0.4rem var(--main-middle-post-padding);
+  border-radius: var(--main-middle-post-radius);
+}
+
+.main-middle .create-post input[type="text"] {
+  justify-self: start;
+  width: 100%;
+  padding-left: var(--main-middle-post-padding);
+  margin-right: var(--main-middle-margin);
+}
+
+.main-middle .create-post input[type="text"] ::placeholder {
+  color: var(--color-grey);
+  font-style: italic;
+}
