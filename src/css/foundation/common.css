@@ -10,7 +10,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   background: var(--color-white);
-  background-color: gray;
+  background-color: lightgrey;
 }
 
 *,
